@@ -1,0 +1,167 @@
+[
+    {
+        "id": 132198423,
+        "status": "New",
+        "status_id": 1,
+        "priority": "Low",
+        "priority_id": 2,
+        "title": "Search view, which can display dynamic suggestions, is the focused state of...",
+        "user": "Michale",
+        "timestamp": "23 Dec 2023 03:43 PM",
+        "tags": ["Low", "Open"]
+    },
+    {
+        "id": 132198424,
+        "status": "First response overdue",
+        "status_id": 2,
+        "priority": "Urgent",
+        "priority_id": 1,
+        "title": "Ticket subject small",
+        "user": "Noah",
+        "timestamp": "23 Dec 2023 03:43 PM",
+        "tags": ["Urgent", "Open", "Spam"]
+    },
+    {
+        "id": 132198425,
+        "status": "In Progress",
+        "status_id": 3,
+        "priority": "Medium",
+        "priority_id": 3,
+        "title": "API request failing intermittently",
+        "user": "Emma",
+        "timestamp": "22 Dec 2023 10:30 AM",
+        "tags": ["Medium", "Open"]
+    },
+    {
+        "id": 132198426,
+        "status": "Resolved",
+        "status_id": 4,
+        "priority": "Low",
+        "priority_id": 2,
+        "title": "User unable to reset password",
+        "user": "James",
+        "timestamp": "21 Dec 2023 05:12 PM",
+        "tags": ["Low", "Closed"]
+    },
+    {
+        "id": 132198427,
+        "status": "New",
+        "status_id": 1,
+        "priority": "High",
+        "priority_id": 4,
+        "title": "App crashes on startup",
+        "user": "Sophia",
+        "timestamp": "20 Dec 2023 02:00 PM",
+        "tags": ["High", "Open"]
+    },
+    {
+        "id": 132198428,
+        "status": "First response overdue",
+        "status_id": 2,
+        "priority": "Urgent",
+        "priority_id": 1,
+        "title": "Database sync issues causing missing records",
+        "user": "Liam",
+        "timestamp": "19 Dec 2023 09:45 AM",
+        "tags": ["Urgent", "Open"]
+    },
+    {
+        "id": 132198429,
+        "status": "In Progress",
+        "status_id": 3,
+        "priority": "Medium",
+        "priority_id": 3,
+        "title": "Payment gateway integration issues",
+        "user": "Olivia",
+        "timestamp": "18 Dec 2023 07:20 PM",
+        "tags": ["Medium", "Pending"]
+    },
+    {
+        "id": 132198430,
+        "status": "Closed",
+        "status_id": 5,
+        "priority": "Low",
+        "priority_id": 2,
+        "title": "Feature request: Add dark mode support",
+        "user": "William",
+        "timestamp": "17 Dec 2023 06:10 PM",
+        "tags": ["Low", "Closed"]
+    },
+    {
+        "id": 132198431,
+        "status": "New",
+        "status_id": 1,
+        "priority": "High",
+        "priority_id": 4,
+        "title": "Server downtime affecting all users",
+        "user": "Ava",
+        "timestamp": "16 Dec 2023 08:55 AM",
+        "tags": ["High", "Open"]
+    },
+    {
+        "id": 132198432,
+        "status": "Escalated",
+        "status_id": 6,
+        "priority": "Critical",
+        "priority_id": 5,
+        "title": "Security vulnerability detected in login system",
+        "user": "Benjamin",
+        "timestamp": "15 Dec 2023 11:11 PM",
+        "tags": ["Critical", "Escalated"]
+    },
+    {
+        "id": 132198433,
+        "status": "Pending",
+        "status_id": 7,
+        "priority": "Medium",
+        "priority_id": 3,
+        "title": "Slow response time on mobile devices",
+        "user": "Charlotte",
+        "timestamp": "14 Dec 2023 03:25 PM",
+        "tags": ["Medium", "Pending"]
+    },
+    {
+        "id": 132198434,
+        "status": "Resolved",
+        "status_id": 4,
+        "priority": "Low",
+        "priority_id": 2,
+        "title": "FAQ page displaying outdated information",
+        "user": "Daniel",
+        "timestamp": "13 Dec 2023 12:40 PM",
+        "tags": ["Low", "Closed"]
+    },
+    {
+        "id": 132198435,
+        "status": "New",
+        "status_id": 1,
+        "priority": "Urgent",
+        "priority_id": 1,
+        "title": "Email notifications not being sent",
+        "user": "Ethan",
+        "timestamp": "12 Dec 2023 04:15 PM",
+        "tags": ["Urgent", "Open"]
+    },
+    {
+        "id": 132198436,
+        "status": "First response overdue",
+        "status_id": 2,
+        "priority": "High",
+        "priority_id": 4,
+        "title": "Bug: App freezing on iOS devices",
+        "user": "Mia",
+        "timestamp": "11 Dec 2023 10:05 AM",
+        "tags": ["High", "Open"]
+    },
+    {
+        "id": 132198437,
+        "status": "Closed",
+        "status_id": 5,
+        "priority": "Low",
+        "priority_id": 2,
+        "title": "Request for API rate limit increase",
+        "user": "Henry",
+        "timestamp": "10 Dec 2023 02:50 PM",
+        "tags": ["Low", "Closed"]
+    }
+]
