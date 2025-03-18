@@ -1,4 +1,4 @@
-import '../index.dart';
+import '../../index.dart';
 
 Map<String, WidgetBuilder> defaultRoutes = <String, WidgetBuilder> {
   '/': (context) => TicketsScreen(),

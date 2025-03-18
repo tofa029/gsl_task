@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
+        fontFamily: 'Montserrat'
       ),
       navigatorKey: GlobalKey<NavigatorState>(),
       routes: routes,
