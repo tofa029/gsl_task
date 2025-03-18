@@ -17,4 +17,6 @@ class CustomColors {
   final Color color5A49B4 = const Color(0xFF5A49B4);
   final Color color797979 = const Color(0xFF797979);
   final Color color3B3B3B = const Color(0xFF3B3B3B);
+  final Color colorB7B7B7 = const Color(0xFFB7B7B7);
+
 }

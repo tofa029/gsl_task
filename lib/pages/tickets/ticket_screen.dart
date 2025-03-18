@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import '../../index.dart';
 
@@ -14,12 +13,14 @@ class TicketsScreen extends StatelessWidget {
       body: Column(
         children: [
           30.ph,
+          CustomAppBar(title: 'Gain Solutions',showNotification: true),
           Expanded(
             child: Obx(() {
               if (viewModel.model.tickets.isEmpty) {
                 return const Center(child: CircularProgressIndicator()); // Show loading until tickets are fetched
               }
               return ListView.builder(
+                padding: EdgeInsets.zero,
                 itemCount: viewModel.model.tickets.length,
                 itemBuilder: (context, index) {
                   final ticket = viewModel.model.tickets[index];
@@ -30,13 +31,24 @@ class TicketsScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.confirmation_num), label: "Tickets"),
+          BottomNavigationBarItem(icon: Icon(Icons.contacts_outlined), label: 'Contacts'),
+          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: 'Profile'),
+        ],
+        onTap: (tappedIndex){
+
+        },
+        currentIndex: 0,
+      ),
     );
   }
 
   Widget _ticketCard(TicketEntity ticketEntity){
     return CustomContainer(
       padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.all(10),
+      margin: const EdgeInsets.only(right: 10, bottom: 10, left: 10),
       borderRadius: 8,
       backGroundColor: CustomColors().colorF9FAFB,
       alignment: Alignment.centerLeft,
@@ -45,43 +57,94 @@ class TicketsScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomContainer(
-            borderRadius: 8,
-            padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-            backGroundColor:CustomColors().color44A9F1.withOpacity(0.12),
-            child: CustomText(
-                text: ticketEntity.status,
-              color: CustomColors().color44A9F1,
-              fontSize: 12,
-              fontWeight: FontWeight.w600,
-            ),
+          _ticketCardStatusUi(ticketEntity),
+          10.ph,
+          CustomText(
+            text: '#ID ${ticketEntity.id}',
+            color: CustomColors().colorB7B7B7,
+            fontSize: 11,
+            fontWeight: FontWeight.w500,
           ),
           10.ph,
-          CustomText(text: 'TaskName'),
+          CustomText(
+            text: ticketEntity.title,
+            color: CustomColors().color3B3B3B,
+            fontSize: 14,
+            maxLines: 2,
+            fontWeight: FontWeight.w600,
+          ),
           10.ph,
-          CustomText(text: 'datetime'),
+          _ticketCardUserTimeStampUi(ticketEntity),
           5.ph,
           const Divider(),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              CustomContainer(
-                borderRadius: 10,
-                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                child: CustomText(text: 'Data'),
-              ),
-              10.pw,
-              CustomContainer(
-                borderRadius: 10,
-                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-                child: CustomText(text: 'Data'),
-              ),
-            ],
-          )
+          5.ph,
+          _ticketCardTagsUi(ticketEntity),
         ],
       ),
     );
   }
 
+  Widget _ticketCardStatusUi(TicketEntity ticketEntity) {
+    return CustomContainer(
+      borderRadius: 8,
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+      backGroundColor :viewModel.getColorForStatus(ticketEntity.statusId).withOpacity(0.12),
+      child: CustomText(
+        text: ticketEntity.status,
+        color: viewModel.getColorForStatus(ticketEntity.statusId),
+        fontSize: 12,
+        fontWeight: FontWeight.w600,
+      ),
+    );
+  }
+
+  Widget _ticketCardUserTimeStampUi(TicketEntity ticketEntity) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        CustomText(
+          text: ticketEntity.user,
+          color: CustomColors().colorB7B7B7,
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+        ),
+        CustomContainer(
+          margin: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+          backGroundColor: CustomColors().colorB7B7B7,
+          height: 5,
+          width: 5,
+          borderRadius: 5,
+        ),
+        CustomText(
+          text: ticketEntity.timestamp,
+          color: CustomColors().colorB7B7B7,
+          fontSize: 12,
+          fontWeight: FontWeight.w500,
+        ),
+      ],
+    );
+  }
+
+  Widget _ticketCardTagsUi(TicketEntity ticketEntity) {
+    return SizedBox(
+      height: 32,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: ticketEntity.tags.length,
+        itemBuilder: (ctx, index){
+          return CustomContainer(
+            borderRadius: 10,
+            backGroundColor: CustomColors().white,
+            borderColor: CustomColors().colorB7B7B7.withOpacity(0.5),
+            borderWidth: 1,
+            alignment: Alignment.center,
+            margin: const EdgeInsets.only( right: 5),
+            padding: const EdgeInsets.symmetric( horizontal: 8),
+            child: CustomText(text: ticketEntity.tags[index], color: CustomColors().color797979, fontSize: 12, fontWeight: FontWeight.w500),
+          );
+        },
+      ),
+    );
+  }
 
 }

@@ -1,8 +1,10 @@
 import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:gsl_task/core/index.dart';
 import 'index.dart';
 
 class TicketsViewModel extends GetxController {
@@ -23,6 +25,37 @@ class TicketsViewModel extends GetxController {
       model.tickets.value = data.map((json) => TicketEntity.fromJson(json)).toList();
     }catch(e, stacktrace){
       debugPrintStack(stackTrace: stacktrace);
+    }
+  }
+
+  Color getColorForStatus(int statusId){
+
+    ///1: 'New',
+    ///2: 'First response overdue',
+    ///3: 'In Progress',
+    ///4: 'Resolved',
+    ///5: 'Closed',
+    ///6: 'Escalated',
+    ///7: 'Pending',
+
+    //this method is for chosing color for specific status
+    switch (statusId) {
+      case 1:
+        return CustomColors().color44A9F1;
+      case 2:
+        return CustomColors().colorFFAB00;
+      case 3:
+        return Colors.yellow;
+      case 4:
+        return Colors.green;
+      case 5:
+        return Colors.black;
+      case 6:
+        return CustomColors().color5A49B4;
+      case 7:
+        return Colors.deepOrangeAccent;
+      default:
+        return CustomColors().black;
     }
   }
 }
