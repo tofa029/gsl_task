@@ -1,4 +1,4 @@
-import '../../index.dart';
+import 'package:flutter/material.dart';
 
 class CustomContainer extends StatelessWidget {
   double? width;
@@ -9,6 +9,8 @@ class CustomContainer extends StatelessWidget {
   double? borderRadius;
   double? borderWidth;
   AlignmentGeometry? alignment;
+  EdgeInsetsGeometry? padding;
+  EdgeInsetsGeometry? margin;
 
   CustomContainer({
     super.key,
@@ -20,6 +22,8 @@ class CustomContainer extends StatelessWidget {
     this.borderRadius,
     this.borderWidth,
     this.alignment,
+    this.padding,
+    this.margin,
   });
 
   @override
@@ -28,6 +32,8 @@ class CustomContainer extends StatelessWidget {
       width: width,
       height: height,
       alignment: alignment,
+      padding: padding,
+      margin: margin,
       decoration: BoxDecoration(
         color: backGroundColor ?? Colors.transparent,
         borderRadius: BorderRadius.circular(borderRadius??0),

@@ -1,1 +1,1 @@
-export 'pages/tickets/index.dart';
+export 'tickets/index.dart';

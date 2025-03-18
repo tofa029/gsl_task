@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
+import '../index.dart';
 
 Map<String, WidgetBuilder> defaultRoutes = <String, WidgetBuilder> {
-  //'/': (context) => ,
+  '/': (context) => TicketsScreen(),
 };
