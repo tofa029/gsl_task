@@ -1,18 +1,33 @@
 [
   {
     "id": 1,
-    "name": "User Name 1",
-    "email": "user1@example.com",
+    "name": "Tofayel Hossain",
+    "email": "tofayel@example.com",
     "phone": "123-456-7800",
     "department": "Engineering",
     "address": "10 Random St, City 0, USA",
     "image_url": "https://randomuser.me/api/portraits/men/1.jpg",
     "roles": [
       {
+        "role_id": 190,
+        "name": "Software Engineer",
+        "manager_name": "Tofayel Hossain",
+        "manager_image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "group": "Management"
+      },
+      {
         "role_id": 101,
         "name": "Marketing Specialist",
         "manager_name": "Charlie Johnson",
+        "manager_image": "https://randomuser.me/api/portraits/women/2.jpg",
         "group": "Strategy"
+      },
+      {
+        "role_id": 105,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "manager_image": "https://randomuser.me/api/portraits/women/3.jpg",
+        "group": "Operations"
       }
     ]
   },
@@ -36,6 +51,18 @@
         "name": "Sales Representative",
         "manager_name": "Diana White",
         "group": "Operations"
+      },
+      {
+        "role_id": 105,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
       }
     ]
   },

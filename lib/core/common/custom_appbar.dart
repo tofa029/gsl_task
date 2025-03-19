@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget {
             fontSize: 22,
           ),
           const Spacer(),
-          Badge(
+          if(showNotification)Badge(
             label: CustomContainer(borderRadius: 20,child: CustomText(text: '5', color: CustomColors().white, fontSize: 11,)),
             child: Icon(
               Icons.notifications_none_outlined,

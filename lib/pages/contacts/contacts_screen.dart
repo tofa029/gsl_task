@@ -47,7 +47,6 @@ class ContactsScreen extends StatelessWidget {
   Widget _contactCard(ContactEntity contactEntity) {
     return Obx(() {
       return Stack(
-        alignment: Alignment.centerRight,
         children: [
           CustomContainer(
             padding: const EdgeInsets.all(10),
@@ -135,13 +134,16 @@ class ContactsScreen extends StatelessWidget {
   Widget _morePopUpUi() {
     return Positioned(
       right: 40,
+      bottom: 5,
       child: CustomContainer(
           backGroundColor: CustomColors().white,
-          width: 150,
+          width: 200,
+          height: 120,
           borderRadius: 8,
           padding: const EdgeInsets.all(8),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               CustomText(
                 text: 'Edit',
@@ -149,14 +151,12 @@ class ContactsScreen extends StatelessWidget {
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
-              5.ph,
               CustomText(
                 text: 'View Tickets',
                 color: CustomColors().color3B3B3B,
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
               ),
-              5.ph,
               CustomText(
                 text: 'Delete',
                 color: CustomColors().color3B3B3B,
