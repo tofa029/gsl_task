@@ -15,15 +15,7 @@ class ContactsScreen extends StatelessWidget {
             30.ph,
             CustomAppBar(title: 'Test', showNotification: true),
             _searchUi(),
-            Obx(() => Padding(
-              padding: const EdgeInsets.all(10),
-              child: CustomText(
-                text: "${viewModel.model.contactList.length} Contacts",
-                color: CustomColors().colorB7B7B7,
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-              ),
-            )),
+            _contactCountUi(),
             Expanded(
               child: Obx(() {
                 if (viewModel.model.contactList.isEmpty) {
@@ -42,6 +34,18 @@ class ContactsScreen extends StatelessWidget {
           ],
         ),
         bottomNavigationBar: CustomBottomBar(currentIndex: 1));
+  }
+
+  Widget _contactCountUi(){
+    return Obx(() => Padding(
+      padding: const EdgeInsets.all(10),
+      child: CustomText(
+        text: "${viewModel.model.contactList.length} Contacts",
+        color: CustomColors().colorB7B7B7,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      ),
+    ));
   }
 
   Widget _contactCard(ContactEntity contactEntity) {
