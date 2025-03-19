@@ -28,10 +28,10 @@ class CustomAppBar extends StatelessWidget {
           ),
           const Spacer(),
           Badge(
-            label: CustomContainer(borderRadius: 20,child: CustomText(text: '5', color: CustomColors().white)),
+            label: CustomContainer(borderRadius: 20,child: CustomText(text: '5', color: CustomColors().white, fontSize: 11,)),
             child: Icon(
               Icons.notifications_none_outlined,
-              size: 35,
+              size: 25,
               color: CustomColors().color3B3B3B,
             ),
           ),

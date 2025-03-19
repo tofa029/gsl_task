@@ -10,9 +10,20 @@ class ContactsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             30.ph,
             CustomAppBar(title: 'Test', showNotification: true),
+            _searchUi(),
+            Obx(() => Padding(
+              padding: const EdgeInsets.all(10),
+              child: CustomText(
+                text: "${viewModel.model.contactList.length} Contacts",
+                color: CustomColors().colorB7B7B7,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            )),
             Expanded(
               child: Obx(() {
                 if (viewModel.model.contactList.isEmpty) {
@@ -59,10 +70,7 @@ class ContactsScreen extends StatelessWidget {
               ],
             ),
           ),
-          if(viewModel.model.activeCardIndex.value == contactEntity.id)  Positioned(
-              child : CustomContainer(backGroundColor: CustomColors().white,width: 150, child: Text('ghfsg')),
-
-          )
+          if(viewModel.model.activeCardIndex.value == contactEntity.id) _morePopUpUi()
         ],
       );
     });
@@ -97,7 +105,7 @@ class ContactsScreen extends StatelessWidget {
         const Spacer(),
         InkWell(
           onTap: () {
-            viewModel.model.activeCardIndex.value = contactEntity.id;
+            viewModel.model.activeCardIndex.value =  viewModel.model.activeCardIndex.value == contactEntity.id ? -1 : contactEntity.id;
           },
           child: const Padding(
             padding: EdgeInsets.all(10),
@@ -121,6 +129,63 @@ class ContactsScreen extends StatelessWidget {
           fontWeight: FontWeight.w500,
         ),
       ],
+    );
+  }
+
+  Widget _morePopUpUi() {
+    return Positioned(
+      right: 40,
+      child: CustomContainer(
+          backGroundColor: CustomColors().white,
+          width: 150,
+          borderRadius: 8,
+          padding: const EdgeInsets.all(8),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomText(
+                text: 'Edit',
+                color: CustomColors().color3B3B3B,
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+              5.ph,
+              CustomText(
+                text: 'View Tickets',
+                color: CustomColors().color3B3B3B,
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+              5.ph,
+              CustomText(
+                text: 'Delete',
+                color: CustomColors().color3B3B3B,
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+            ],
+          )
+      ),
+    );
+  }
+
+  Widget _searchUi(){
+    return CustomContainer(
+      margin: const EdgeInsets.only(right: 10, bottom: 10, left: 10),
+      borderRadius: 15,
+      backGroundColor: CustomColors().colorF9FAFB,
+      alignment: Alignment.centerLeft,
+      borderColor: CustomColors().color797979.withOpacity(0.3),
+      child: TextField(
+        decoration: InputDecoration(
+          hintText: "Search Contacts",
+          prefixIcon: Icon(Icons.search, color: CustomColors().color3B3B3B),
+          border: InputBorder.none,
+        ),
+        onChanged: (String value){
+
+        },
+      )
     );
   }
 }
