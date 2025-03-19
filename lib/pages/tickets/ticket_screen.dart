@@ -13,7 +13,7 @@ class TicketsScreen extends StatelessWidget {
       body: Column(
         children: [
           30.ph,
-          CustomAppBar(title: 'Gain Solutions',showNotification: true),
+          CustomAppBar(title: 'Test',showNotification: true),
           Expanded(
             child: Obx(() {
               if (viewModel.model.tickets.isEmpty) {
@@ -31,17 +31,7 @@ class TicketsScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.confirmation_num), label: "Tickets"),
-          BottomNavigationBarItem(icon: Icon(Icons.contacts_outlined), label: 'Contacts'),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: 'Profile'),
-        ],
-        onTap: (tappedIndex){
-
-        },
-        currentIndex: 0,
-      ),
+      bottomNavigationBar: CustomBottomBar(currentIndex: 0)
     );
   }
 

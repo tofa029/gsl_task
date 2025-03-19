@@ -1,0 +1,456 @@
+[
+  {
+    "id": 1,
+    "name": "User Name 1",
+    "email": "user1@example.com",
+    "phone": "123-456-7800",
+    "department": "Engineering",
+    "address": "10 Random St, City 0, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/1.jpg",
+    "roles": [
+      {
+        "role_id": 101,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "User Name 2",
+    "email": "user2@example.com",
+    "phone": "123-456-7801",
+    "department": "Marketing",
+    "address": "11 Random St, City 1, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/2.jpg",
+    "roles": [
+      {
+        "role_id": 102,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 103,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "User Name 3",
+    "email": "user3@example.com",
+    "phone": "123-456-7802",
+    "department": "Sales",
+    "address": "12 Random St, City 2, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/3.jpg",
+    "roles": [
+      {
+        "role_id": 103,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 105,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "User Name 4",
+    "email": "user4@example.com",
+    "phone": "123-456-7803",
+    "department": "Engineering",
+    "address": "13 Random St, City 3, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/4.jpg",
+    "roles": [
+      {
+        "role_id": 104,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "User Name 5",
+    "email": "user5@example.com",
+    "phone": "123-456-7804",
+    "department": "Marketing",
+    "address": "14 Random St, City 4, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/5.jpg",
+    "roles": [
+      {
+        "role_id": 105,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 109,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "User Name 6",
+    "email": "user6@example.com",
+    "phone": "123-456-7805",
+    "department": "Sales",
+    "address": "15 Random St, City 0, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/6.jpg",
+    "roles": [
+      {
+        "role_id": 106,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 102,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "User Name 7",
+    "email": "user7@example.com",
+    "phone": "123-456-7806",
+    "department": "Engineering",
+    "address": "16 Random St, City 1, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/7.jpg",
+    "roles": [
+      {
+        "role_id": 107,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "User Name 8",
+    "email": "user8@example.com",
+    "phone": "123-456-7807",
+    "department": "Marketing",
+    "address": "17 Random St, City 2, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/8.jpg",
+    "roles": [
+      {
+        "role_id": 108,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 106,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "User Name 9",
+    "email": "user9@example.com",
+    "phone": "123-456-7808",
+    "department": "Sales",
+    "address": "18 Random St, City 3, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/9.jpg",
+    "roles": [
+      {
+        "role_id": 109,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 108,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "User Name 10",
+    "email": "user10@example.com",
+    "phone": "123-456-7809",
+    "department": "Engineering",
+    "address": "19 Random St, City 4, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/10.jpg",
+    "roles": [
+      {
+        "role_id": 101,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "User Name 11",
+    "email": "user11@example.com",
+    "phone": "123-456-7810",
+    "department": "Marketing",
+    "address": "20 Random St, City 0, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/11.jpg",
+    "roles": [
+      {
+        "role_id": 102,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 103,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "User Name 12",
+    "email": "user12@example.com",
+    "phone": "123-456-7811",
+    "department": "Sales",
+    "address": "21 Random St, City 1, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/12.jpg",
+    "roles": [
+      {
+        "role_id": 103,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 105,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "User Name 13",
+    "email": "user13@example.com",
+    "phone": "123-456-7812",
+    "department": "Engineering",
+    "address": "22 Random St, City 2, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/13.jpg",
+    "roles": [
+      {
+        "role_id": 104,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "User Name 14",
+    "email": "user14@example.com",
+    "phone": "123-456-7813",
+    "department": "Marketing",
+    "address": "23 Random St, City 3, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/14.jpg",
+    "roles": [
+      {
+        "role_id": 105,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 109,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "User Name 15",
+    "email": "user15@example.com",
+    "phone": "123-456-7814",
+    "department": "Sales",
+    "address": "24 Random St, City 4, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/15.jpg",
+    "roles": [
+      {
+        "role_id": 106,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 102,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "User Name 16",
+    "email": "user16@example.com",
+    "phone": "123-456-7815",
+    "department": "Engineering",
+    "address": "25 Random St, City 0, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/16.jpg",
+    "roles": [
+      {
+        "role_id": 107,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "User Name 17",
+    "email": "user17@example.com",
+    "phone": "123-456-7816",
+    "department": "Marketing",
+    "address": "26 Random St, City 1, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/17.jpg",
+    "roles": [
+      {
+        "role_id": 108,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 106,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "User Name 18",
+    "email": "user18@example.com",
+    "phone": "123-456-7817",
+    "department": "Sales",
+    "address": "27 Random St, City 2, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/18.jpg",
+    "roles": [
+      {
+        "role_id": 109,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 108,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      },
+      {
+        "role_id": 107,
+        "name": "Software Engineer",
+        "manager_name": "Alice Brown",
+        "group": "Management"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "User Name 19",
+    "email": "user19@example.com",
+    "phone": "123-456-7818",
+    "department": "Engineering",
+    "address": "28 Random St, City 3, USA",
+    "image_url": "https://randomuser.me/api/portraits/men/19.jpg",
+    "roles": [
+      {
+        "role_id": 101,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "User Name 20",
+    "email": "user20@example.com",
+    "phone": "123-456-7819",
+    "department": "Marketing",
+    "address": "29 Random St, City 4, USA",
+    "image_url": "https://randomuser.me/api/portraits/women/20.jpg",
+    "roles": [
+      {
+        "role_id": 102,
+        "name": "Marketing Specialist",
+        "manager_name": "Charlie Johnson",
+        "group": "Strategy"
+      },
+      {
+        "role_id": 103,
+        "name": "Sales Representative",
+        "manager_name": "Diana White",
+        "group": "Operations"
+      }
+    ]
+  }
+]

@@ -1,11 +1,7 @@
 import 'dart:convert';
-
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:gsl_task/core/index.dart';
-import 'index.dart';
+import '../../index.dart';
 
 class TicketsViewModel extends GetxController {
   TicketModel model = TicketModel();
@@ -38,7 +34,7 @@ class TicketsViewModel extends GetxController {
     ///6: 'Escalated',
     ///7: 'Pending',
 
-    //this method is for chosing color for specific status
+    //this method is for choosing color for specific status
     switch (statusId) {
       case 1:
         return CustomColors().color44A9F1;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gsl_task/core/common/custom_container.dart';
-import 'package:gsl_task/core/common/custom_text.dart';
-import 'package:gsl_task/core/index.dart';
+
+import '../index.dart';
+
 
 class CustomAppBar extends StatelessWidget {
   String title;

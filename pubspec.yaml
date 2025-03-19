@@ -61,6 +61,7 @@ flutter:
 
   assets:
     - assets/json_data/tickets.json
+    - assets/json_data/contacts.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
