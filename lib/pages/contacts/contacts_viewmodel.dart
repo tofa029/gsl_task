@@ -12,6 +12,9 @@ class ContactsViewModel extends GetxController {
     gettingApiForContacts();
   }
 
+  ///this method is for getting contact list from api simulates an api response by json object
+  ///which is stored in json file to asset folder
+  ///and converted to [ContactEntity] and saved as a list which is observable
   Future<void> gettingApiForContacts()async{
     await Future.delayed(const Duration(seconds: 2));
 

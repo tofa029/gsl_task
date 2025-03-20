@@ -1,7 +1,6 @@
-//contact Entity to convert api json data to dart vars
-
-
 import '../index.dart';
+
+///contact Entity to convert api json data to dart vars
 
 class ContactEntity {
   int? id;

@@ -36,6 +36,7 @@ class ContactsScreen extends StatelessWidget {
         bottomNavigationBar: CustomBottomBar(currentIndex: 1));
   }
 
+  ///this widget is responsible to build contact count in ui
   Widget _contactCountUi(){
     return Obx(() => Padding(
       padding: const EdgeInsets.all(10),
@@ -48,6 +49,8 @@ class ContactsScreen extends StatelessWidget {
     ));
   }
 
+  ///this widget is responsible to build a single contact card in ui
+  ///take [ContactEntity] as positional param
   Widget _contactCard(ContactEntity contactEntity) {
     return Obx(() {
       return Stack(
@@ -79,6 +82,8 @@ class ContactsScreen extends StatelessWidget {
     });
   }
 
+  ///this widget is responsible to build contact header in contact card with a round profile image and more info button
+  ///take [ContactEntity] as positional param
   Widget _contactHeader(ContactEntity contactEntity) {
     return Row(
       children: [
@@ -119,6 +124,8 @@ class ContactsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build contact info details row with an icon in a contact card
+  ///take [icon, info] as required params
   Widget _contactInfoRowUi({required Widget icon, required String info}) {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -135,6 +142,7 @@ class ContactsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build show more items for a single contact in popup
   Widget _morePopUpUi() {
     return Positioned(
       right: 40,
@@ -173,6 +181,7 @@ class ContactsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build search textfield ui and has a method search by number
   Widget _searchUi(){
     return CustomContainer(
       margin: const EdgeInsets.only(right: 10, bottom: 10, left: 10),

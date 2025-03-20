@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+/// A custom bottom bar which extends stateless widget
+/// This widget provides a currentIndex
+/// It is wrapped inside a [BottomNavigationBar] to design bottom bar
 class CustomBottomBar extends StatelessWidget {
+  /// The [currentIndex] is for display the selected page in the bottom bar as required param
   int currentIndex;
 
   CustomBottomBar({

@@ -12,6 +12,9 @@ class TicketsViewModel extends GetxController {
     gettingApiForTickets();
   }
 
+  ///this method is for getting ticket list from api simulates an api response by json object
+  ///which is stored in json file to asset folder
+  ///and converted to [TicketEntity] to ticket list
   Future<void> gettingApiForTickets()async{
     await Future.delayed(const Duration(seconds: 2));
 
@@ -24,6 +27,8 @@ class TicketsViewModel extends GetxController {
     }
   }
 
+
+  ///this method is for choosing color for specific status
   Color getColorForStatus(int statusId){
 
     ///1: 'New',
@@ -34,7 +39,6 @@ class TicketsViewModel extends GetxController {
     ///6: 'Escalated',
     ///7: 'Pending',
 
-    //this method is for choosing color for specific status
     switch (statusId) {
       case 1:
         return CustomColors().color44A9F1;

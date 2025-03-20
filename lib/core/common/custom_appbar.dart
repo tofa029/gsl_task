@@ -3,8 +3,17 @@ import 'package:flutter/material.dart';
 import '../index.dart';
 
 
+/// A custom app bar which extends stateless widget
+/// This widget provides a title and an optional notification icon with a badge
+/// It is wrapped inside a [CustomContainer] to ensure a consistent design
+
+
 class CustomAppBar extends StatelessWidget {
-  String title;
+  /// The title displayed in the app bar. required param
+  final String title;
+
+  /// Whether to show the notification icon with a badge
+  /// Defaults to true, optional param
   bool showNotification;
 
   CustomAppBar({

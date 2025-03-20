@@ -42,6 +42,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build ticket count in ui
+  ///take [TicketEntity] as positional param
   Widget _ticketCard(TicketEntity ticketEntity){
     return CustomContainer(
       padding: const EdgeInsets.all(10),
@@ -81,6 +83,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build ticket card status in ui
+  ///take [TicketEntity] as positional param
   Widget _ticketCardStatusUi(TicketEntity ticketEntity) {
     return CustomContainer(
       borderRadius: 8,
@@ -95,6 +99,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build ticket card timestamp in ui
+  ///take [TicketEntity] as positional param
   Widget _ticketCardUserTimeStampUi(TicketEntity ticketEntity) {
     return Row(
       mainAxisSize: MainAxisSize.min,
@@ -122,6 +128,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build ticket card tags in ui
+  ///take [TicketEntity] as positional param
   Widget _ticketCardTagsUi(TicketEntity ticketEntity) {
     return SizedBox(
       height: 32,
@@ -144,6 +152,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build tickets count in ui
+  ///take [BuildContext] as positional param
   Widget _ticketCountWithFilterUi(BuildContext context){
     return Obx(() => Padding(
       padding: const EdgeInsets.all(10),
@@ -170,6 +180,8 @@ class TicketsScreen extends StatelessWidget {
     ));
   }
 
+  ///this widget is responsible to build ticket filter popup in ui
+  ///take [BuildContext] as positional param
   Future<void> _filterPopUp(BuildContext context)async{
     showDialog(
         context: context,
@@ -196,6 +208,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build filter header timestamp in filter ui
+  ///take [BuildContext] as positional param
   Widget _filterPopHeader(BuildContext context){
     return Row(
       children: [
@@ -225,6 +239,7 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build filter brand lists in filter ui
   Widget _brandNamesForFilter(){
     return Padding(
       padding: const EdgeInsets.all(10),
@@ -253,6 +268,8 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build filter brand row in filter ui
+  ///take [name] as positional param
   Widget _brandRowUi(String name){
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -283,6 +300,7 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build filter priority dropdown in filter ui
   Widget _priorityFilterDropdown(){
     return Padding(
       padding: const EdgeInsets.all(10),
@@ -324,6 +342,7 @@ class TicketsScreen extends StatelessWidget {
     );
   }
 
+  ///this widget is responsible to build filter tags in filter ui
   Widget _searchTagUi(){
     return Padding(
       padding: const EdgeInsets.all(10),

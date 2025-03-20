@@ -12,6 +12,9 @@ class ProfileViewModel extends GetxController {
     gettingApiForProfile();
   }
 
+  ///this method is for getting profile from api simulates an api response by json object
+  ///which is stored in json file to asset folder
+  ///and converted to [ContactEntity] to show profile and saved as a list which is observable
   Future<void> gettingApiForProfile()async{
     await Future.delayed(const Duration(seconds: 2));
 
