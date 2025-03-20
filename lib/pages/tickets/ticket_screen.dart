@@ -13,7 +13,7 @@ class TicketsScreen extends StatelessWidget {
       body: Column(
         children: [
           30.ph,
-          CustomAppBar(title: 'Test',showNotification: true),
+          CustomAppBar(title: 'Gain Sloutions',showNotification: true),
           Expanded(
             child: Obx(() {
               if (viewModel.model.tickets.isEmpty) {
