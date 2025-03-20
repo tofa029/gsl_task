@@ -35,5 +35,7 @@ Model file has been used for storing data and handles data by observable and sho
 # Conclusion
 This project is structured to ensure scalability, maintainability, and performance efficiency. By using MVVM with GetX, it separates UI, business logic, and data management efficiently, making it easy to extend and modify in the future.
 
+# Application video
 
+[Screen_Recording_20250319_225809.webm](https://github.com/user-attachments/assets/2f592ba2-6c97-4406-9f23-86e2e10bf930)
 
