@@ -5,6 +5,7 @@ import '../index.dart';
 class ContactsModel{
 
   RxList<ContactEntity> contactList = <ContactEntity>[].obs;
+  RxList<ContactEntity> contactFilteredList = <ContactEntity>[].obs;
   RxList<String> itemList = <String>['Edit','View Tickets','delete'].obs;
   Rx<int?> activeCardIndex = Rx<int?>(null);
 }

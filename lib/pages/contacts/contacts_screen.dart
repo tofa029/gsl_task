@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:gsl_task/core/common/custom_text.dart';
 import '../../index.dart';
 
 class ContactsScreen extends StatelessWidget {
@@ -20,12 +21,14 @@ class ContactsScreen extends StatelessWidget {
               child: Obx(() {
                 if (viewModel.model.contactList.isEmpty) {
                   return const Center(child: CircularProgressIndicator()); // Show loading until Contactss are fetched
+                }else if (viewModel.model.contactFilteredList.isEmpty) {
+                  return Center(child: CustomText(text: 'No Contact Found!',color: CustomColors().colorB7B7B7,)); // Show no Contactss are fetched on filter
                 }
                 return ListView.builder(
                   padding: EdgeInsets.zero,
-                  itemCount: viewModel.model.contactList.length,
+                  itemCount: viewModel.model.contactFilteredList.length,
                   itemBuilder: (context, index) {
-                    final contact = viewModel.model.contactList[index];
+                    final contact = viewModel.model.contactFilteredList[index];
                     return _contactCard(contact);
                   },
                 );
@@ -191,12 +194,12 @@ class ContactsScreen extends StatelessWidget {
       borderColor: CustomColors().color797979.withOpacity(0.3),
       child: TextField(
         decoration: InputDecoration(
-          hintText: "Search Contacts",
+          hintText: "Search Contacts (name/number)",
           prefixIcon: Icon(Icons.search, color: CustomColors().color3B3B3B),
           border: InputBorder.none,
         ),
         onChanged: (String value){
-
+          viewModel.searchContacts(value);
         },
       )
     );
