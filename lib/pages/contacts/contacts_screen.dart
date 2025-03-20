@@ -13,7 +13,7 @@ class ContactsScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             30.ph,
-            CustomAppBar(title: 'Test', showNotification: true),
+            CustomAppBar(title: 'Gain Solutions', showNotification: true),
             _searchUi(),
             _contactCountUi(),
             Expanded(
